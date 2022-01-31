@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body,
+html {
+	overflow: hidden;
+	height: 100vh;
+}
+body {
+	background: rgba(223, 223, 223, 0.288) !important;
+}
+
+header {
+	background: #ebe1fd !important;
+	width: 100%;
+	position: fixed;
+	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.096);
+}
+.header__img {
+	border-radius: 25px;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	padding: 2px;
+	background: #fff;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.096);
+}
+
+aside {
+	padding: 10px 0;
+	box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.048);
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 300px;
+	margin-top: 47px;
+	height: calc(100vh - 47px);
+	background: rgb(255, 255, 255) !important;
+}
+.aside .title {
+	text-align: center;
+}
+
+main {
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.048);
+	background: rgb(255, 255, 255);
+	margin: 60px 10px 150px 10px;
+	width: calc(100% - 300px);
+	height: calc(100vh - 76px);
+	padding: 10px;
+	border-radius: 5px;
+
+}
+.content {
+	position: relative;
+	display: flex;
+	justify-content: end;
+}
+
+.main__info {
+	scroll-behavior: smooth;
+	display: block;
+	height: calc(100% - 50px);
+	overflow-y: auto;
+	border-radius: 10px;
+
+}
+main .title {
+	text-align: center;
+	font-weight: 500;
+}
+
+.main__content .image {
+	max-width: 50%;
+	height: 400px;
+    z-index: 1;
+}
+
+.main__content .image img {
+	border-top-left-radius: 5px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.main__content .right img {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 0;
+}
+.main__content .info {
+	border-left: 1px solid rgba(0, 0, 0, 0.308);
+}
+.list-group-item:first-child {
+	border-radius: 0 !important;
+}
+.list-group-item:last-child {
+	border-radius: 0 !important;
+}
+.list-group-item.active {
+	background: #ebe1fd !important;
+	border: #ebe1fd !important;
+	color: #000000 !important;
+}
+.list-group-item {
+	border-right: 0 !important;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 12px; 
+
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgb(113, 113, 113);
+	border: 1px solid rgb(124, 124, 122);
+	border-radius: 9em;
+}
